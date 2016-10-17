@@ -1,0 +1,58 @@
+.value{
+    font-weight: bold;
+}
+
+.change_up .value{
+    color:#{map-get($colors, ixs_green)};
+}
+
+.change_down .value{
+    color:#{map-get($colors, ixs_red)};
+}
+
+.value ion-icon{
+    margin-right: 10px;
+}
+
+.list-ios ion-item-sliding.outstanding .item{
+    background-color: #{map-get($colors, ixs_yellow_light)};
+}
+
+.player_avatar{
+    height: 100%;
+    border-right: 1px solid #bbb;
+}
+
+ion-menu h2{
+    color: #ccc;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin:14px 0 0;
+}
+
+.filter_btn_list{
+   list-style: none;
+   padding: 8px 0;
+   margin: 0;
+}
+.filter_btn_list li{
+   display: inline-block;
+   width: 14%;
+   margin: 3px;
+}
+
+.filter_btn_list button{
+    background-color: transparent;
+    padding: 3px;
+    border: 2px solid #{map-get($colors, ixs_yellow)};
+    border-radius: 4px;
+}
+
+.filter_btn_list .unselected button{
+    filter: grayscale(100%);
+    opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+    
+}
+

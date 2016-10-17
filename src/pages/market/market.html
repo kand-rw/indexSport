@@ -1,0 +1,308 @@
+<ion-menu [content]="maincontent" type="overlay">
+	<ion-content padding>
+
+
+
+		<h2>
+			Tipo de título:
+		</h2>
+		<ul class="filter_btn_list">
+			<li>
+				<button>
+          <img src="assets/icons/ico_circulation.png"/>
+        </button>
+			</li>
+			<li class="unselected">
+				<button>
+          <img src="assets/icons/ico_first_emision.png"/>
+        </button>
+			</li>
+			<li>
+				<button>
+          <img src="assets/icons/ico_second_emision.png"/>
+        </button>
+			</li>
+			<li>
+				<button>
+          <img src="assets/icons/ico_outstanding.png"/>
+        </button>
+			</li>
+			<li class="unselected">
+				<button>
+          <img src="assets/icons/ico_favorite.png"/>
+        </button>
+			</li>
+		</ul>
+
+
+		<h2>
+			Deporte:
+		</h2>
+		<ul class="filter_btn_list">
+			<li>
+				<button>
+          <img src="assets/sports/1.png"/>
+        </button>
+			</li>
+			<li>
+				<button>
+          <img src="assets/sports/2.png"/>
+        </button>
+			</li>
+			<li>
+				<button>
+          <img src="assets/sports/3.png"/>
+        </button>
+			</li>
+			<li>
+				<button>
+          <img src="assets/sports/4.png"/>
+        </button>
+			</li>
+			<li>
+				<button>
+          <img src="assets/sports/5.png"/>
+        </button>
+			</li>
+			<li>
+				<button>
+          <img src="assets/sports/6.png"/>
+        </button>
+			</li>
+			<li>
+				<button>
+          <img src="assets/sports/7.png"/>
+        </button>
+			</li>
+		</ul>
+	
+		<h2>
+			Valor:
+		</h2>
+		<ion-range dualKnobs="true" [(ngModel)]="dualValue2" min="21" max="72" color="ixs_yellow">
+		</ion-range>
+
+	</ion-content>
+</ion-menu>
+
+<ion-content #maincontent>
+
+	<ion-header>
+
+		<ion-navbar>
+			<button ion-button menuToggle><ion-icon name="options"></ion-icon></button>
+			<ion-searchbar></ion-searchbar>
+		</ion-navbar>
+
+	</ion-header>
+
+	<ion-content>
+		<ion-list>
+			<ion-item-sliding class="change_up outstanding">
+				<ion-item>
+					<ion-thumbnail item-left>
+						<img src="assets/teams/1/thumb.png">
+					</ion-thumbnail>
+					<h2>Leo Messi</h2>
+					<p>FC Barcelona</p>
+					<div class="value" item-right>
+						<ion-icon name="arrow-up"></ion-icon> 24
+					</div>
+				</ion-item>
+				<ion-item-options side="right">
+					<img src="assets/players/11/thumb.jpg" class="player_avatar">
+					<button ion-button color="light" clear>
+          <ion-icon name="star-outline" color="favorite"></ion-icon>
+        </button>
+
+
+
+
+				</ion-item-options>
+			</ion-item-sliding>
+
+			<ion-item-sliding class="change_down">
+				<ion-item>
+					<ion-thumbnail item-left>
+						<img src="assets/teams/7/thumb.png">
+					</ion-thumbnail>
+					<h2>Marc Marquez</h2>
+					<p>Honda</p>
+					<div class="value" item-right>
+						<ion-icon name="arrow-down"></ion-icon> 22
+					</div>
+				</ion-item>
+				<ion-item-options side="right">
+					<img src="assets/players/21/thumb.jpg" class="player_avatar">
+					<button ion-button color="light" clear>
+          <ion-icon name="star-outline" color="favorite"></ion-icon>
+        </button>
+				</ion-item-options>
+			</ion-item-sliding>
+
+			<ion-item-sliding class="outstanding">
+				<ion-item>
+					<ion-thumbnail item-left>
+						<img src="assets/teams/1/thumb.png">
+					</ion-thumbnail>
+					<h2>Neymar Jr</h2>
+					<p>FC Barcelona</p>
+					<div class="value" item-right>
+						20
+					</div>
+				</ion-item>
+				<ion-item-options side="right">
+					<img src="assets/players/31/thumb.jpg" class="player_avatar">
+					<button ion-button color="light" clear>
+          <ion-icon name="star-outline" color="favorite"></ion-icon>
+        </button>
+				</ion-item-options>
+			</ion-item-sliding>
+
+
+			<ion-item-sliding>
+				<ion-item>
+					<ion-thumbnail item-left>
+						<img src="assets/teams/1/thumb.png">
+					</ion-thumbnail>
+					<h2>Sergi Roberto</h2>
+					<p>FC Barcelona</p>
+					<div class="value" item-right>
+						18
+					</div>
+				</ion-item>
+				<ion-item-options side="right">
+					<img src="assets/players/41/thumb.jpg" class="player_avatar">
+					<button ion-button color="light" clear>
+          <ion-icon name="star-outline" color="favorite"></ion-icon>
+        </button>
+				</ion-item-options>
+			</ion-item-sliding>
+
+
+			<ion-item-sliding class="change_down">
+				<ion-item>
+					<ion-thumbnail item-left>
+						<img src="assets/teams/1/thumb.png">
+					</ion-thumbnail>
+					<h2>Ter Stegen</h2>
+					<p>FC Barcelona</p>
+					<div class="value" item-right>
+						<ion-icon name="arrow-down"></ion-icon> 18
+					</div>
+				</ion-item>
+				<ion-item-options side="right">
+					<img src="assets/players/51/thumb.jpg" class="player_avatar">
+					<button ion-button color="light" clear>
+          <ion-icon name="star-outline" color="favorite"></ion-icon>
+        </button>
+				</ion-item-options>
+			</ion-item-sliding>
+
+
+			<ion-item-sliding class="change_up">
+				<ion-item>
+					<ion-thumbnail item-left>
+						<img src="assets/teams/2/thumb.png">
+					</ion-thumbnail>
+					<h2>Carlos Moya</h2>
+					<p>Real Madrid</p>
+					<div class="value" item-right>
+						<ion-icon name="arrow-up"></ion-icon> 18
+					</div>
+				</ion-item>
+				<ion-item-options side="right">
+					<img src="assets/players/61/thumb.jpg" class="player_avatar">
+					<button ion-button color="light" clear>
+          <ion-icon name="star-outline" color="favorite"></ion-icon>
+        </button>
+				</ion-item-options>
+			</ion-item-sliding>
+
+
+			<ion-item-sliding>
+				<ion-item>
+					<ion-thumbnail item-left>
+						<img src="assets/teams/3/thumb.png">
+					</ion-thumbnail>
+					<h2>Makelelé</h2>
+					<p>Bayer Munich</p>
+					<div class="value" item-right>
+						16
+					</div>
+				</ion-item>
+				<ion-item-options side="right">
+					<img src="assets/players/71/thumb.jpg" class="player_avatar">
+					<button ion-button color="light" clear>
+          <ion-icon name="star-outline" color="favorite"></ion-icon>
+        </button>
+				</ion-item-options>
+			</ion-item-sliding>
+
+
+			<ion-item-sliding class="change_down">
+				<ion-item>
+					<ion-thumbnail item-left>
+						<img src="assets/teams/3/thumb.png">
+					</ion-thumbnail>
+					<h2>Paul Pogbá</h2>
+					<p>Bayer Munich</p>
+					<div class="value" item-right>
+						<ion-icon name="arrow-down"></ion-icon> 14
+					</div>
+				</ion-item>
+				<ion-item-options side="right">
+					<img src="assets/players/81/thumb.jpg" class="player_avatar">
+					<button ion-button color="light" clear>
+          <ion-icon name="star-outline" color="favorite"></ion-icon>
+        </button>
+				</ion-item-options>
+			</ion-item-sliding>
+
+
+
+			<ion-item-sliding class="change_down">
+				<ion-item>
+					<ion-thumbnail item-left>
+						<img src="assets/teams/2/thumb.png">
+					</ion-thumbnail>
+					<h2>Luca Modrick</h2>
+					<p>Madrid</p>
+					<div class="value" item-right>
+						<ion-icon name="arrow-down"></ion-icon> 12
+					</div>
+				</ion-item>
+				<ion-item-options side="right">
+					<img src="assets/players/91/thumb.jpg" class="player_avatar">
+					<button ion-button color="light" clear>
+          <ion-icon name="star-outline" color="favorite"></ion-icon>
+        </button>
+				</ion-item-options>
+			</ion-item-sliding>
+
+
+
+			<ion-item-sliding>
+				<ion-item>
+					<ion-thumbnail item-left>
+						<img src="assets/teams/2/thumb.png">
+					</ion-thumbnail>
+					<h2>Di Maria</h2>
+					<p>Madrid</p>
+					<div class="value" item-right>
+						9
+					</div>
+				</ion-item>
+				<ion-item-options side="right">
+					<img src="assets/players/101/thumb.jpg" class="player_avatar">
+					<button ion-button color="light" clear>
+          <ion-icon name="star-outline" color="favorite"></ion-icon>
+        </button>
+				</ion-item-options>
+			</ion-item-sliding>
+
+		</ion-list>
+
+
+	</ion-content>
+</ion-content>
